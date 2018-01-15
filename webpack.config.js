@@ -16,6 +16,7 @@ module.exports = {
 		libraryTarget: "umd"
 	},
 	resolve:{
+		modules: [ 'node_modules' ],
 		extensions: ['.js', '.styl','.css']
 	},
 	target: "web", // enum

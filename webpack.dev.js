@@ -14,6 +14,7 @@ module.exports = {
 		publicPath: "/"
 	},
 	resolve:{
+		modules: [ 'node_modules' ],
 		extensions: ['.js', '.styl','.css']
 	},
 	target: "web", // enum
