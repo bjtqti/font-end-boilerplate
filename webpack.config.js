@@ -44,7 +44,8 @@ module.exports = {
                     {
                     	loader:'stylus-loader'
                     }]
-		        })
+		        }),
+		        exclude:[NODE_MODULES]
 		    },
 		    {
 		    	test:/\.(png|jpg|svg|gif)$/,
