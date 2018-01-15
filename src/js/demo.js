@@ -1,3 +1,3 @@
-require('normalize.css');
-require('../css/common.styl');
+
+require('../css/demo.styl');
 require('./meta');

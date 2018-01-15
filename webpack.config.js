@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const NODE_MODULES = path.resolve('node_modules');
 //console.log(NODE_MODULES)
 
@@ -32,7 +33,8 @@ module.exports = {
 		          	use: [{
                         loader: 'css-loader',
                         options: {
-                            importLoaders: 1,
+                        	import:true,
+                            importLoaders: 2,
                         }
                     },
                     {
@@ -57,6 +59,7 @@ module.exports = {
 	  new webpack.DefinePlugin({
 	    'process.env.NODE_ENV': '"production"',
 	  }),
+	  new CleanWebpackPlugin('dist'),
 	  new ExtractTextPlugin({
 	    filename: 'css/[name]-[hash:7].css',
 	    allChunks: true,
