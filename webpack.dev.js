@@ -20,6 +20,11 @@ module.exports = {
 	target: "web", // enum
 	module:{
 		rules:[
+			{
+		        test: /\.(jsx?)$/,
+		        loader: 'babel-loader',
+		        exclude:[NODE_MODULES]
+		    },
 		    {
 		    	test:/\.styl|css$/,
 		    	use:[
