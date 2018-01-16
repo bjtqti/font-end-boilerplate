@@ -23,7 +23,7 @@ module.exports = {
 	module:{
 		rules:[
 			{
-		        test: /\.(es6|jsx)$/,
+		        test: /\.(jsx?)$/,
 		        loader: 'babel-loader',
 		        exclude:[NODE_MODULES]
 		    },
