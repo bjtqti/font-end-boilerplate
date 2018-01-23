@@ -60,6 +60,7 @@ module.exports = {
 	  	contentBase: path.join(__dirname, "dist"),
 	  	hot:true,
 	  	compress: true,
+	  	open:true,
 	  	port: 9000
 	},
 	plugins: [
