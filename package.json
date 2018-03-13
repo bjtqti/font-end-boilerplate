@@ -5,27 +5,19 @@
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-<<<<<<< HEAD
     "build": "NODE_ENV=production webpack -p",
-=======
-    "build": "webpack -p",
->>>>>>> b86a4dc8bc591ab86f257f49f1b39be523420eec
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "classnames": "^2.2.5",
     "normalize.css": "^7.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
-=======
-    "axios": "^0.17.1",
+    "react-dom": "^16.2.0",
     "normalize.css": "^7.0.0"
->>>>>>> b86a4dc8bc591ab86f257f49f1b39be523420eec
   },
   "repository": "https://github.com/bjtqti/font-end-boilerplate.git",
   "devDependencies": {
