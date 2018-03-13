@@ -1,4 +1,4 @@
-
+ 
 import '../css/demo.styl'
 import './meta'
 import React from "react"
@@ -14,4 +14,5 @@ const initialState = {};
 ReactDOM.render(
     <Index initialState={initialState} />,
     document.getElementById('app'))
+  
  

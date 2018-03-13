@@ -60,8 +60,13 @@ module.exports = {
 	  	contentBase: path.join(__dirname, "dist"),
 	  	hot:true,
 	  	compress: true,
+<<<<<<< HEAD
 	  	port: 9000,
 	  	open:true
+=======
+	  	open:true,
+	  	port: 9000
+>>>>>>> b86a4dc8bc591ab86f257f49f1b39be523420eec
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
