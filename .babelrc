@@ -1,3 +1,9 @@
 {
-  	"presets": ["env"]
+  	"presets": ["env","react"],
+  	"plugins": [
+  		"transform-decorators-legacy",
+  		"transform-export-extensions",
+  		"transform-class-properties",
+  		"transform-object-rest-spread"
+  	]
 }

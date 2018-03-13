@@ -8,7 +8,8 @@ const NODE_MODULES = path.resolve('node_modules');
 
 module.exports = {
 	entry:{
-		demo:"./src/js/demo.js"
+		demo:"./src/js/demo.js",
+		vendors:['react','react-dom']
 	},
 	output:{
 		path:path.resolve(__dirname,'dist'),
@@ -58,9 +59,10 @@ module.exports = {
 		]
 	},
 	plugins: [
-	  new webpack.DefinePlugin({
-	    'process.env.NODE_ENV': '"production"',
-	  }),
+	  // new webpack.DefinePlugin({
+	  //   'process.env.NODE_ENV': '"production"',
+	  // }),
+	  new webpack.optimize.CommonsChunkPlugin('common.js'),
 	  new CleanWebpackPlugin('dist'),
 	  new ExtractTextPlugin({
 	    filename: 'css/[name]-[hash:7].css',
@@ -68,7 +70,7 @@ module.exports = {
 	  }),
 	  new HtmlWebpackPlugin({
 	  	template:'./src/demo.html',
-	  	inject:'head',
+	  	//inject:'head',
 	  	minify:false
 	  })
 	]

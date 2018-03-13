@@ -60,7 +60,8 @@ module.exports = {
 	  	contentBase: path.join(__dirname, "dist"),
 	  	hot:true,
 	  	compress: true,
-	  	port: 9000
+	  	port: 9000,
+	  	open:true
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
